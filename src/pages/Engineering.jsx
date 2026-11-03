@@ -7,7 +7,7 @@ import { DiagramBox, Stack, Flow } from '../components/Diagram.jsx'
 export default function Engineering() {
   return (
     <>
-      <PageHero eyebrow="Engineering Services" title={<>Complex platforms.<br />Focused engineering.</>} text="Embedded software, Android/Linux, SoC validation and test automation — where technical depth matters." cta={{ to: '/contact', label: 'Discuss Your Engineering Need' }} />
+      <PageHero eyebrow="Engineering Services" title={<>Complex platforms.<br />Focused engineering.</>} text="Embedded software, Android/Linux, SoC validation and test automation where technical depth matters." cta={{ to: '/contact', label: 'Discuss Your Engineering Need' }} />
 
       <section className="section">
         <div className="container-x grid items-center gap-12 lg:grid-cols-[1.16fr_.84fr]">
@@ -42,7 +42,7 @@ export default function Engineering() {
         <div className="container-x">
           <Reveal>
             <DiagramBox title="Illustrative validation lifecycle" caption="Workflow visualization · suitable for validation and automation sections">
-              <Flow steps={['Requirements', 'Test Design', 'Execution', 'Debug & Triage', 'Regression']} />
+              <Flow stackOnMobile steps={['Requirements', 'Test Design', 'Execution', 'Debug & Triage', 'Regression']} />
             </DiagramBox>
           </Reveal>
         </div>

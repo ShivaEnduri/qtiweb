@@ -38,3 +38,113 @@
   .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
   *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; }
 }
+
+
+/* ---------- Responsive flow diagrams ---------- */
+@layer components {
+  .flow { container-type: inline-size; width: 100%; }
+  .flow-track { display: flex; flex-direction: column; align-items: stretch; gap: .5rem; }
+  .flow-track.flow-reverse { flex-direction: column-reverse; }
+  .flow-step { @apply rounded-xl bg-mint px-2 py-4 text-center text-xs font-bold text-[#0b6a6a] transition hover:bg-teal hover:text-white; }
+  .flow-arrow { @apply flex shrink-0 justify-center text-teal-dark; }
+  .flow-arrow-h { display: none; }
+}
+
+@container (min-width: 280px) {
+  .flow[data-w="280"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="280"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="280"] .flow-arrow-v { display: none; }
+  .flow[data-w="280"] .flow-arrow-h { display: block; }
+}
+@container (min-width: 320px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+@container (min-width: 360px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+@container (min-width: 400px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+@container (min-width: 440px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+@container (min-width: 480px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+@container (min-width: 520px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+@container (min-width: 560px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+
+@container (min-width: 600px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+@container (min-width: 640px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+@container (min-width: 680px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+@container (min-width: 720px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+@container (min-width: 760px) {
+  .flow[data-w="320"] .flow-track { flex-direction: row; align-items: center; justify-content: center; }
+  .flow[data-w="320"] .flow-step { flex: 1 1 0; min-width: 0; }
+  .flow[data-w="320"] .flow-arrow-v { display: none; }
+  .flow[data-w="320"] .flow-arrow-h { display: block; }
+}
+
+
+@media (min-width: 1024px) {
+  .flow[data-w] .flow-track { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; }
+  .flow[data-w] .flow-step { flex: 1 1 0%; min-width: 88px; }
+  .flow[data-w] .flow-arrow-v { display: none; }
+  .flow[data-w] .flow-arrow-h { display: block; }
+}

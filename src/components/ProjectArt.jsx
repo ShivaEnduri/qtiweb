@@ -44,7 +44,7 @@ export default function ProjectArt({ kind }) {
   return (
     <div className="relative h-[180px] overflow-hidden bg-[#0b243d]">
       {arts[kind]}
-      <span className="absolute bottom-2 right-2 text-[8px] font-bold tracking-widest text-[#bee8e7]">ILLUSTRATIVE VISUAL</span>
+      <span className="absolute bottom-2 right-2 text-[8px] font-bold tracking-widest text-[#bee8e7]">RATIVE VISUAL</span>
     </div>
   )
 }

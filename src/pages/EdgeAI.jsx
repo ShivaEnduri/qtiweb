@@ -14,9 +14,9 @@ export default function EdgeAI() {
         <div className="container-x">
           <SectionHead eyebrow="Four Internal Prototypes" title="AI you can see in action." text="Developed for practical learning and demonstrations using laptops and webcams." />
           <ProjectShowcase />
-          <p className="mt-4 text-xs text-muted">Visuals are conceptual illustrations, not photographs of the actual QTIMINDS demos.
+          {/* <p className="mt-4 text-xs text-muted">Visuals are conceptual illustrations, not photographs of the actual QTIMINDS demos.
             
-          </p>
+          </p> */}
         </div>
       </section>
 
