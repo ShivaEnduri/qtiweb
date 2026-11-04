@@ -27,7 +27,7 @@ export default function About() {
           </Reveal>
           <Reveal from="right" delay={120}>
             <div className="relative min-h-[340px] overflow-hidden rounded-2xl shadow-lift">
-              <img src="/images/hero.webp" alt="Engineering concept" className="absolute inset-0 h-full w-full object-cover" />
+              <img src="/images/about.jpeg" alt="Engineering concept" className="absolute inset-0 h-full w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent" />
             </div>
           </Reveal>
