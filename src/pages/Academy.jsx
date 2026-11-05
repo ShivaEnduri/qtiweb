@@ -14,7 +14,7 @@ const phases = [
 export default function Academy() {
   return (
     <>
-      <PageHero eyebrow="QTIMINDS Academy" title={<>Learn by building.<br />Grow through engineering.</>} text="Practical learning in embedded software, validation and applied Edge AI, designed around real exercises and demonstrations." cta={{ to: '/contact', label: 'Ask About Programs' }} />
+      <PageHero eyebrow="QTI Academy" title={<>Learn by building.<br />Grow through engineering.</>} text="Practical learning in embedded software, validation and applied Edge AI, designed around real exercises and demonstrations." cta={{ to: '/contact', label: 'Ask About Programs' }} />
 
       <section className="section">
         <div className="container-x">

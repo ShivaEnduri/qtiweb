@@ -37,7 +37,7 @@ export default function Home() {
             <FeatureCard icon={Users} title="Engineering Talent" text="Find technically aligned engineers for semiconductor, embedded and validation teams." to="/talent" />
             <FeatureCard icon={Cpu} title="Engineering Services" text="Platform software, Android/Linux, drivers, validation and automation." to="/engineering" delay={100} />
             <FeatureCard icon={Sparkles} title="Edge AI & Innovation" text="Working prototypes in vision, gestures, driver monitoring and offline voice AI." to="/edge-ai" delay={200} />
-            <FeatureCard icon={GraduationCap} title="QTIMINDS Academy" text="Practical embedded engineering education and campus AI challenges." to="/academy" delay={300} />
+            <FeatureCard icon={GraduationCap} title="QTI Academy" text="Practical embedded engineering education and campus AI challenges." to="/academy" delay={300} />
           </div>
         </div>
       </section>

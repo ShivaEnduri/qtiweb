@@ -2,6 +2,7 @@ import { Target, Telescope, Gem } from 'lucide-react'
 import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import FeatureCard from '../components/FeatureCard.jsx'
+import CeoCorner from '../components/CeoCorner.jsx'
 import CTA from '../components/CTA.jsx'
 import { leaders } from '../data/site.js'
 
@@ -61,26 +62,7 @@ export default function About() {
 
       <section className="section bg-soft">
         <div className="container-x">
-          <Reveal className="mb-10 text-center">
-            <span className="eyebrow">Leadership</span>
-            <h2 className="h2">The people steering QTIMINDS.</h2>
-            <p className="mx-auto text-muted">Experienced leaders committed to engineering quality and long-term partnerships.</p>
-          </Reveal>
-          <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-3">
-            {leaders.map((l, i) => (
-              <Reveal key={l.img} delay={i * 130}>
-                <div className="group overflow-hidden rounded-2xl border border-line bg-white shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-lift">
-                  <div className="aspect-[4/5] overflow-hidden bg-navy-2">
-                    <img src={l.img} alt={l.name} loading="lazy" className={`h-full w-full object-cover ${l.pos} transition duration-500 group-hover:scale-105`} />
-                  </div>
-                  <div className="border-t-4 border-teal p-4 text-center">
-                    <h3 className="text-base">{l.name}</h3>
-                    <p className="text-[13px] text-muted">{l.role}</p>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+          <CeoCorner leader={leaders[0]} />
         </div>
       </section>
 

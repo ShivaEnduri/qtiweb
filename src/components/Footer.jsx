@@ -30,7 +30,7 @@ export default function Footer() {
           <div>
             <h4 className="mb-3 text-sm font-bold text-white">Programs</h4>
             <ul className="space-y-2 text-[13px]">
-              <li><Link className="transition hover:text-teal-light" to="/academy">QTIMINDS Academy</Link></li>
+              <li><Link className="transition hover:text-teal-light" to="/academy">QTI Academy</Link></li>
               <li><Link className="transition hover:text-teal-light" to="/challenge">Edge AI Build Challenge 1.0</Link></li>
             </ul>
           </div>

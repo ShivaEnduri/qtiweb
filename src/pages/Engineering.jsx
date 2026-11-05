@@ -2,6 +2,7 @@ import { Cpu, Smartphone, CircuitBoard, ShieldCheck, RefreshCw, Globe } from 'lu
 import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import FeatureCard from '../components/FeatureCard.jsx'
+import EcosystemSection from '../components/EcosystemSection.jsx'
 import { DiagramBox, Stack, Flow } from '../components/Diagram.jsx'
 
 export default function Engineering() {
@@ -47,6 +48,8 @@ export default function Engineering() {
           </Reveal>
         </div>
       </section>
+
+      <EcosystemSection />
     </>
   )
 }

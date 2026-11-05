@@ -26,7 +26,7 @@ export default function Careers() {
             <span className="eyebrow">Our Hiring Approach</span>
             <h2 className="h2">Relevant skills. Real potential.</h2>
             <p className="lead mb-3">We value strong foundations, practical thinking, learning ability and clear communication.</p>
-            <p className="lead">Early-career applicants interested in structured technical learning may separately explore QTIMINDS Academy.</p>
+            <p className="lead">Early-career applicants interested in structured technical learning may separately explore QTI Academy.</p>
           </Reveal>
           <Reveal from="right" delay={120}>
             <DiagramBox title="Candidate journey"><Flow steps={['Apply', 'Screen', 'Interview', 'Decision']} /><p className="mt-4 text-xs text-muted">Training enrollment does not guarantee hiring.</p></DiagramBox>
