@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import FeatureCard from '../components/FeatureCard.jsx'
 import CeoCorner from '../components/CeoCorner.jsx'
+import ImageCarousel from '../components/ImageCarousel.jsx'
 import CTA from '../components/CTA.jsx'
 import { leaders } from '../data/site.js'
 
@@ -11,6 +12,15 @@ const journey = [
   ['2024–25', 'Engineering focus', 'Talent and technical services capability development.'],
   ['2026', 'Practical innovation', 'Edge AI prototypes, academy programs and new semiconductor exploration.'],
   ['The road ahead', 'Scalable partnerships', 'Deeper engineering competencies and customer relationships.'],
+]
+
+// Replace these placeholder paths (and alt text) with your real images in /public/images/about/
+const storyImages = [
+  { src: '/images/about/story-1.jpeg', alt: 'QTIMINDS engineering team at work' },
+  { src: '/images/about/story-2.jpeg', alt: 'QTIMINDS office in Hyderabad' },
+  { src: '/images/about/story-3.jpeg', alt: 'Embedded hardware and development boards' },
+  { src: '/images/about/story-4.jpeg', alt: 'Team collaboration and learning session' },
+  { src: '/images/about/story-5.jpeg', alt: 'Team collaboration and learning session' },
 ]
 
 export default function About() {
@@ -27,10 +37,7 @@ export default function About() {
             <p className="lead">We believe companies succeed when they combine relevant technical skills, responsive execution and a continuous learning culture.</p>
           </Reveal>
           <Reveal from="right" delay={120}>
-            <div className="relative min-h-[340px] overflow-hidden rounded-2xl shadow-lift">
-              <img src="/images/about.jpeg" alt="Engineering concept" className="absolute inset-0 h-full w-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent" />
-            </div>
+            <ImageCarousel images={storyImages} interval={4000} />
           </Reveal>
         </div>
       </section>
