@@ -39,6 +39,10 @@ export default function Engineering() {
         </div>
       </section>
 
+      
+
+      <EcosystemSection />
+
       <section className="section">
         <div className="container-x">
           <Reveal>
@@ -48,8 +52,6 @@ export default function Engineering() {
           </Reveal>
         </div>
       </section>
-
-      <EcosystemSection />
     </>
   )
 }
