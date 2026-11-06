@@ -11,6 +11,9 @@ const phases = [
   ['Phase 04', 'Capstone', 'Project build, validation and technical presentation.', 'bg-[#0faaa0]'],
 ]
 
+// Replace with your real photo in /public/images/academy/
+const hallImage = { src: '/images/academy.jpeg', alt: 'Students learning in the QTI Academy training hall in Hyderabad' }
+
 export default function Academy() {
   return (
     <>
@@ -35,6 +38,19 @@ export default function Academy() {
             ))}
           </div>
           <span className="mt-3 block text-[10px] font-extrabold uppercase tracking-[1.3px] text-[#648498]">Illustrative four-phase grouping of the 16-week curriculum; exact week allocations depend on the batch plan.</span>
+        </div>
+      </section>
+
+      <section className="section !pt-0">
+        <div className="container-x">
+          <Reveal from="scale">
+            <figure className="m-0 overflow-hidden rounded-2xl shadow-lift">
+               <img src={hallImage.src} alt={hallImage.alt} loading="lazy" className="h-auto w-full md:aspect-[8/3] md:object-cover md:object-center" />
+              <figcaption className="bg-[#0b243d] px-5 py-3 text-sm text-[#cde9e8]">
+                Hands-on learning at our training hall in Hyderabad.
+              </figcaption>
+            </figure>
+          </Reveal>
         </div>
       </section>
 
